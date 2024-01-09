@@ -1,20 +1,17 @@
 //comment for git pull test #2
-const arr = [1, 3, 2, 4, 5, 3, 6, 7];
+const arr = [1, 3, 2, 4, 5, 3, 6, 7, 8];
 
 const test = 0;
 
-function indexArr()
-{
+function indexArr() {
     console.log(arr[0]);
 }
 
-function loopArray()
-{
+function loopArray() {
     {
         let i = 0;
         const l = arr.length;
-        while (i < l)
-        {
+        while (i < l) {
             console.log(arr[i]);
             i++;
         }
@@ -49,41 +46,36 @@ function loopArray()
     // }
 }
 
-function filterArr()
-{
-    const result = arr.filter(function(elem){
+function filterArr() {
+    const result = arr.filter(function (elem) {
         return elem % 2 == 0;
     });
     console.log(result);
     console.log(arr);
 };
 
-function mapArr()
-{
-    const result = arr.map(function(elem){
+function mapArr() {
+    const result = arr.map(function (elem) {
         return "num: " + elem;
     });
     console.log(result);
 }
 
-function reduceArr()
-{
+function reduceArr() {
     //params: function(current_value, elem), default_value;
-    const result = arr.reduce(function(a, b){
+    const result = arr.reduce(function (a, b) {
         return a + b;
     }, 0);
     console.log(result);
 }
 
-function recursiveIteration(i)
-{
+function recursiveIteration(i) {
     if (i >= arr.length) return;
     console.log(arr[i]);
     recursiveIteration(i + 1);
 }
 
-function recursiveCount(i)
-{
+function recursiveCount(i) {
     if (i >= arr.length) return 0;
     return recursiveCount(i + 1) + arr[i];
 }
