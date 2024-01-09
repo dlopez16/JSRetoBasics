@@ -1,3 +1,4 @@
+//comment for git pull test
 const arr = [1, 3, 2, 4, 5, 3, 6, 7];
 
 function indexArr()
